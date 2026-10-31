@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS library_project
+CHARACTER SET utf8mb4;
+
+USE library_project;
+
+CREATE TABLE IF NOT EXISTS books (
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    author VARCHAR(150) NOT NULL,
+    category VARCHAR(100) NOT NULL
+);
+
+SHOW TABLES;
